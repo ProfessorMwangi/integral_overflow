@@ -9,7 +9,8 @@ fn main() {
     let y1 = x.checked_add(1);
     println!("Checked Add 1 to x is {:?}",y1);
 
-    
+    let (y2, overflowed)= x.overflowing_add(1);
+    println!("Overflowed Add 1 to x is {}.Which returns ({0},{1})", y2, overflowed)
 
 
 }
