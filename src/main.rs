@@ -4,5 +4,12 @@ fn main() {
     // println!("{}",x + 1);
     // Rust forces you to declare your intent....Therefore
     let y = x.wrapping_add(1);
-    println!("Wrapping Add 1 to x is = {}", y);
+    println!("Wrapping Add 1 to x ({1:08b}) is = {0}({0:08b})", y,x);
+
+    let y1 = x.checked_add(1);
+    println!("Checked Add 1 to x is {:?}",y1);
+
+    
+
+
 }
